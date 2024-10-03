@@ -280,3 +280,11 @@ The manual is now done, and you can see my finished codefile in the repo.
 
 Have fun making!
 
+
+## Contributors
+- Kim Dekker [Github](https://github.com/Kimdekker/)
+
+
+## Licentie
+
+This project is provided under the [MIT](/LICENSE) License
