@@ -19,3 +19,7 @@ So the steps we will folllow:
 3. [Tinkering around with the code: customize your prompts and commando's](#tinkering)
 4. [Making different lightmodes for your smarthome](#lightmodes)
 
+<br /><br />
+
+## Telegram: Getting your chatbot in the app
+######telegram
