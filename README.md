@@ -6,4 +6,10 @@ First things first, what do you need for this manual (sensors you can choose you
 - Ledstrip
 - Wiring
 - Cable from your PC import to your board
+- WiFi or your phone's hotspot
+- Telegram (the app)
+
+## what we are going to make during this manual
+We will make a little smarthome system where we can control a ledstrip using telegram (by chatting with your own chatbot).
+No worries, we will go step by step, and it's not all that hard ;)
 
