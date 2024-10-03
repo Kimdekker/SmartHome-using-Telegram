@@ -16,13 +16,47 @@ No worries, we will go step by step, and it's not all that hard ;)
 So the steps we will folllow:
 1. [Telegram: Getting your chatbot in the app](#telegram)
 2. [Arduino_IDE: Setting up code + libraries and linking the API code](#arduino_ide)
-3. [Tinkering around with the code: customize your prompts and commando's](#tinkering)
+3. [Tinkering: customize your prompts and commando's](#tinkering)
 4. [Making different lightmodes for your smarthome](#lightmodes)
 
 <br /><br />
 
 ## Telegram 
 ### Getting your chatbot in the app
+So first things first, you should download Telegram. Just the regular app./
+Then on the app, start a new chat (the icon in the right-top of the screen, and search for: Botfather
+![botfather](https://github.com/user-attachments/assets/a0627eb2-d9cd-4422-a484-b9789df255ba)
+
+<br />
+
+After that go to the botFather chat and type in: /start
+
+![start](https://github.com/user-attachments/assets/4fd9ad89-587e-4d57-bc1b-1ff877eed030)
+
+You'll see all the commands you could use, but we won't use these much in this case, but feel free to tinker around with these if you'd like :)
+
+Follow the steps that you read in the chat > give your bot a name:
+![newbot](https://github.com/user-attachments/assets/6b328cea-c1a3-4bb7-9162-6d3a88249ed0)
+
+And after, give your bot a username. It must be unique, and you won't see it in the chat, so no worries on choosing a complex name here.
+Tip: your bot name bust end with Bot (with the capital_ or _bot (with the underscore).
+
+After you've chosen a name, you get a message with a key. You'll need this key in the next step.
+
+![choosename](https://github.com/user-attachments/assets/4f462443-9e72-4fd9-8d2f-02195b4d72a0)
+
+Alright, so now your bot is ready, so leave this chat, and you'll see your own bot with your name.
+Thats good. In telegram you're set now!
+
 
 ## Arduino_IDE 
 ### Setting up code + libraries and linking the API code
+
+
+
+
+## Tinkering
+### customize your prompts and commando's
+
+## Tinkering
+### customize your prompts and commando's
