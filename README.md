@@ -13,3 +13,9 @@ First things first, what do you need for this manual (sensors you can choose you
 We will make a little smarthome system where we can control a ledstrip using telegram (by chatting with your own chatbot).
 No worries, we will go step by step, and it's not all that hard ;)
 
+So the steps we will folllow:
+1. Telegram: Getting your chatbot in the app
+2. Arduino IDE: Setting up code + libraries and linking the API code
+3. Tinkering around with the code: customize your prompts and commando's
+4. Making different lightmodes for your smarthome
+
