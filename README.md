@@ -109,25 +109,7 @@ You could change that message to something else as well. I chose to send an auto
 In the next steps this may come in handy!
 
 ```
-  if (millis() - bot_lasttime > BOT_MTBS)
-  {
-    int numNewMessages = bot.getUpdates(bot.last_message_received + 1);
-
-    while (numNewMessages)
-    {
-      Serial.println("got response");
-      handleNewMessages(numNewMessages);
-
-      String chat_id = bot.messages[0].chat_id;
       bot.sendMessage(chat_id, "Kan ik je verder nog helpen? Let me know!", "");
-
-
-      numNewMessages = bot.getUpdates(bot.last_message_received + 1);
-
-    }
-
-    bot_lasttime = millis();
-  }
 ```
 
 Alright! So, now we're set, we can send messages, and receive messages as well. 
