@@ -74,8 +74,73 @@ From here you have to do 2 things.
 #define WIFI_PASSWORD "Your WiFi password"
 ```
 
+After you did this, upload your code your code to your board by clicking the arrow on the top left. 
+If the code is uploaded, head over to the serial monitor (in the top right corner > icon), and you should see that the board is connecting to your phone. 
+
+If somethings wrong in this phase, it's probably because you didn't fill in the key, or your Wifi credentials right.
+
+<br />
+
+When thats all good, you can go to your own bot (the one that you named yourself) and send it a message:
+![yourbot](https://github.com/user-attachments/assets/9d738ac6-f647-40f2-882d-9ac4e07d645b)
+
+You'll see that it bounces back your own message. In the code that happens in this function:
+```
+  if (millis() - bot_lasttime > BOT_MTBS)
+  {
+    int numNewMessages = bot.getUpdates(bot.last_message_received + 1);
+
+    while (numNewMessages)
+    {
+      Serial.println("got response");
+      handleNewMessages(numNewMessages);
+      numNewMessages = bot.getUpdates(bot.last_message_received + 1);
+    }
+
+    bot_lasttime = millis();
+  }
+```
+
+What happens here is a few things:
+1. You get a message in the serial monitor "got response"
+2. It sends the message that you send back to the chat and bounces back the last message it received
+
+You could change that message to something else as well. I chose to send an automatic text back saying something like "Hello can I help you with anything else?"
+In the next steps this may come in handy!
+
+```
+  if (millis() - bot_lasttime > BOT_MTBS)
+  {
+    int numNewMessages = bot.getUpdates(bot.last_message_received + 1);
+
+    while (numNewMessages)
+    {
+      Serial.println("got response");
+      handleNewMessages(numNewMessages);
+
+      String chat_id = bot.messages[0].chat_id;
+      bot.sendMessage(chat_id, "Kan ik je verder nog helpen? Let me know!", "");
+
+
+      numNewMessages = bot.getUpdates(bot.last_message_received + 1);
+
+    }
+
+    bot_lasttime = millis();
+  }
+```
+
+Alright! So, now we're set, we can send messages, and receive messages as well. 
+In the next step we will apply rudimentary intelligence (sounds freaky, but no worries)
+
+
 ## Tinkering
 ### customize your prompts and commando's
+
+Because we are building a smarthome system where we can adjust the ledstrip to a certain mood using Telegram, we will need to send our bot a specific message to trigger an output > "Lights on" = the lights of the ledstrip will turn on.
+
+We can do this using if else statements. 
+So lets head over to the right function > 'handleNewMessages'
 
 ## Tinkering
 ### customize your prompts and commando's
