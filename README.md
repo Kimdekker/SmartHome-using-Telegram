@@ -51,9 +51,28 @@ Thats good. In telegram you're set now!
 
 ## Arduino_IDE 
 ### Setting up code + libraries and linking the API code
+Let's head over to Arduino IDE, and install some things you need.
+If you don't have your esp32 board downloaded yet, download so:
+![board](https://github.com/user-attachments/assets/40bfbd4f-678e-412b-b60d-3bda37ff470a)
 
+And download the "UniversalTelegramBot" library. Newest version is good.
+![telegramlibrary](https://github.com/user-attachments/assets/eea0b424-5ab1-43c0-9b2a-d6f1abdbcca2)
 
+Now, we can import our basic code (we don't even have to write that ourself!)
+Go to: File > examples > UniversalTelegramBot > ESP32 > EchoBot
+![import sample](https://github.com/user-attachments/assets/a0ea8169-1844-4f90-a92d-0bb4f18bc97e)
 
+And there, you have your first bit of code almost ready to go. 
+From here you have to do 2 things.
+1. Add the key you got in the botFather chat and fill that in the placceholder:
+```
+#define BOT_TOKEN "###########:################################"
+```
+2. Add your Wifi-network name and password:
+```
+#define WIFI_SSID "Your WiFi name"
+#define WIFI_PASSWORD "Your WiFi password"
+```
 
 ## Tinkering
 ### customize your prompts and commando's
