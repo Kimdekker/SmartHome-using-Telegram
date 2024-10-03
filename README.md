@@ -15,7 +15,7 @@ No worries, we will go step by step, and it's not all that hard ;)
 
 So the steps we will folllow:
 1. [Telegram: Getting your chatbot in the app](#telegram)
-2. [Arduino_IDE: Setting up code + libraries and linking the API code](#arduino)
+2. [Arduino_IDE: Setting up code + libraries and linking the API code](#arduino_ide)
 3. [Tinkering around with the code: customize your prompts and commando's](#tinkering)
 4. [Making different lightmodes for your smarthome](#lightmodes)
 
